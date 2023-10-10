@@ -1,1 +1,0 @@
-print('Good evening Pan Janusz Stal')
