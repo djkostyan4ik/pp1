@@ -12,29 +12,29 @@ elif washing_product == 'underwear':
 elif washing_product == 'shoes':
     time += 20
 else:
-    print('Choose the right product')
+    print('Choose the right product\n\n')
 
 
-print(f'washing_product = "{washing_product}"')
+print(f'washing_product = "{washing_product}"\n')
 
 if rinse == 1:
-    time1 += 15
+    time += 15
     print('rinse =',True)
 else:
-    time1 += 0
+    time += 0
     print('rinse =',False)
 
 
 
 
 if spin == 1:
-    time2 += 9
+    time += 9
     print('spin =',True)
 else:
-    time2 += 0
+    time += 0
     print('spin =',False)
 
 
-total_time = time + time1 + time2
+total_time = time
 
 print(f'Total washing time: {total_time}')
