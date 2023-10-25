@@ -1,8 +1,16 @@
-decimal_number = int(input('Enter decimal number: '))
-binary_number = ''
-quotient = decimal_number
-while quotient > 0:
-    remainder = quotient % 2
-    binary_number = str(remainder) + binary_number
-    quotient = quotient // 2
-print(f"{decimal_number}(10) = {binary_number}(2)")
+dec = int(input('Enter decimal number: '))
+pre_bin = str()
+div = dec
+while dec:
+    if dec % 2 != 0:
+        pre_bin += '1'
+    else:
+        pre_bin += '0'
+    dec = dec // 2
+
+bin = ''
+for i in pre_bin:
+    bin += pre_bin[-1]
+    pre_bin = pre_bin[:-1]
+
+print(f'{div}(10) = {bin}(2)')
