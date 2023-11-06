@@ -12,4 +12,4 @@ third_number = int(input('Enter the third number: '))
 if numbers(first_number, second_number, third_number):
     print(f'Numbers {first_number}, {second_number}, and {third_number} are different.')
 else:
-    print('Theu are the same.')
+    print('They are the same.')

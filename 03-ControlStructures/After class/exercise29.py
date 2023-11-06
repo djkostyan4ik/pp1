@@ -1,6 +1,4 @@
 time = 0
-time1 = 0
-time2 = 0
 washing_product = input('Enter a washing product: \n\n1.jacket\n2.underwear\n3.shoes\n\n')
 rinse = int(input('Do you want an additional rinse?\n\n1 for Yes\n2 for No\n\n'))
 spin = int(input('Do you want an additional spin?\n\n1 for Yes\n2 for No\n\n'))

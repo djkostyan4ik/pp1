@@ -1,6 +1,6 @@
 import math
 
-height_cm = input('Enter your height: ')
+height_cm = int(input('Enter your height: '))
 height_feet = math.floor(height_cm / 30.48)
 height_cm2 = height_cm - round(height_feet * 30.48)
 height_inches = round(height_cm2 / 2.54)

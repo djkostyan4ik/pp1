@@ -1,17 +1,8 @@
 weight = float(input('Enter your weight: '))
 height = float(input('Enter your height: '))
 
-lambda x: x == weight / (height/100)**2
-bmi = lambda x: x == weight / height**2
-bmi(81,182)
-
-
-
-
-
-
-
-
+bmi = lambda weight, height: height / (weight / 100) ** 2
+print(bmi(weight, height))
 
 
 
