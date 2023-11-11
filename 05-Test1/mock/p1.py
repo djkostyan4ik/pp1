@@ -6,13 +6,22 @@ of coins that can be used to pay
 for the purchased product.
 '''
 def f(n):
-    coins = 0
-    coins += n//5
-    n = n % 5
-    coins += n//2
-    n = n % 2
-    coins += n
-    return coins
+    # coins = 0
+    # coins += n//5
+    # n = n % 5
+    # coins += n//2
+    # n = n % 2
+    # coins += n
+
+    fife_zlotych = int(n / 5)
+    remainder_fife = n % 5
+    two_zlotych = int(remainder_fife / 2)
+    remainder_two = remainder_fife % 2
+    one_zloty = int(remainder_two / 1)
+    number_of_coins = fife_zlotych +  two_zlotych + one_zloty
+
+
+    return number_of_coins
 
 if __name__ == '__main__':
     #check your program in this place
