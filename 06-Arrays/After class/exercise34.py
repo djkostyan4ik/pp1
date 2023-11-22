@@ -1,5 +1,5 @@
 my_tuple = (10, 20, 30, 40, 50)
 my_list = list(my_tuple)
 reversed_tuple = tuple(my_list[::-1])
-print("Tuple: ",*my_tuple)
-print("Reverse order: ",*reversed_tuple)
+print("Tuple:",','.join(map(str,my_tuple)))
+print("Reverse order:",', '.join(map(str,reversed_tuple)))

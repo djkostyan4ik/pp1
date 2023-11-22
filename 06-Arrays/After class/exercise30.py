@@ -13,5 +13,7 @@ def bublesort(array):
 
 if __name__ == '__main__':
     array = [1, 4, 6, 2, 3, 8, 5]
+    # array = [2, 5, 7, 3, 9, 23]
+    # array = [34, 56, 33, 67, 54, 36]
     bublesort(array)
     print('Sorted array:', *array)
