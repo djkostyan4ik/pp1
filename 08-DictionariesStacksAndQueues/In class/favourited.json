@@ -1,0 +1,10 @@
+{
+    "title": "Spider-Man No Way Home",
+    "year": "2021",
+    "actor": {
+        "leading": "Tom Holland",
+        "supporting": "Tobey Maguire"
+    },
+    "oscar": false,
+    "genre": "science-fiction"
+}

@@ -5,11 +5,9 @@ arr = [
     [8,7,1,1,5]
 ]
 
-length = len(arr[0]) - 1
-count = 0
-
-for i in range(len(arr)):
-    count += arr[i][length]
-
+length = len(arr[0])-1
+my_sum = 0
+for row in range(len(arr)):
+    my_sum += arr[row][length]
 print(arr)
-print(count)
+print(my_sum)

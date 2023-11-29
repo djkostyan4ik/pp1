@@ -1,17 +1,4 @@
-# i = 1
-# j = 1
-
-# for row in arr:
-#     for elem in row:
-#         arr[arr.index(row)][row.index(elem)] += i
-#         i += j
-#     for i in range(j+1):
-#         i += 1
-#     j += 1
-
-# print(*arr)
-
-twoD_arr = [
+arr = [
     [0,0,0,0,0],
     [0,0,0,0,0],
     [0,0,0,0,0],
@@ -19,32 +6,29 @@ twoD_arr = [
     [0,0,0,0,0]
 ]
 
-def display_arr(array):
+for row in range(len(arr)):
+    for elem in range(len(arr[0])):
+        arr[row][elem] = (row + 1) * (elem + 1)
 
-    # find how long are numbers in the array
+print(arr)
+
+def my_arr(arr):
+
     max_array = []
 
-    for i in range(len(array)):
-        max_array.append(max(array[i]))
-    
-    max_max = len(str(max(max_array)))
+    for row in range(len(arr)):
+        max_array.append(max(arr[row]))
+    max_max = len(str(max(arr[row])))
 
-    # prepare string for displaying the array
-    x = ""
+    result = ''
 
-    for i in range(len(array)):
-        for j in range(len(array[i])):
-            x += str(twoD_arr[i][j]).rjust(max_max)
-            if j != len(array[i]) - 1:
-                x += " "
+    for row in range(len(arr)):
+        for elem in range(len(arr[row])):
+            result += str(arr[row][elem]).rjust(max_max)
+            if elem != len(arr[row])-1:
+                result += ' '
             else:
-                x += "\n"
-    
-    return x
+                result += '\n'
+    return result
 
-
-for i in range(len(twoD_arr)):
-    for j in range(len(twoD_arr[0])):
-        twoD_arr[i][j] = (i + 1) * (j + 1)
-
-print(display_arr(twoD_arr))
+print(my_arr(arr))

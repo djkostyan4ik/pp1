@@ -11,8 +11,8 @@ def issubset(arr1,arr2):
  
 if __name__ == "__main__":
 
-    arr1 = [11, 3, 7, 1, 13, 21, 12]
-    arr2 = [11, 1, 13, 21, 3, 7]
+    arr1 = [11, 3, 7]
+    arr2 = [1, 2, 6]
  
     if(issubset(arr1, arr2)):
         print("arr1[] is subset of arr2[] ")

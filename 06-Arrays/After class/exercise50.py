@@ -13,16 +13,16 @@ arr_max = arr[0][0]
 max_row = 0
 max_col = 0
 
-for i in range(len(arr)):
-    for j in range(len(arr[i])):
-        if arr[i][j] < arr_min:
-            arr_min = arr[i][j]
-            min_row = i
-            min_col = j
-        if arr[i][j] > arr_max:
-            arr_max = arr[i][j]
-            max_row = i
-            max_col = j
+for row in range(len(arr)):
+    for elem in range(len(arr[row])):
+        if arr[row][elem] < arr_min:
+            arr_min = arr[row][elem]
+            min_row = row
+            min_col = elem
+        if arr[row][elem] > arr_max:
+            arr_max = arr[row][elem]
+            max_row = row
+            max_col = elem
 
 print(arr)
 print(f"Min: {arr_min}\nRow: {min_row}\nColumn: {min_col}")

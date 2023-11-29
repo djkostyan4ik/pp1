@@ -1,9 +1,8 @@
-import random
-
+import random 
 arr = []
-for i in range(5):
+for row in range(5):
     a = []
-    for j in range(3):
+    for elem in range(3):
         a.append(random.randint(0,99))
     arr.append(a)
 print(arr)

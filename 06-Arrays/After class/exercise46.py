@@ -1,35 +1,28 @@
-def display_arr(array):
-
-    # find how long are numbers in the array
-    max_array = []
-
-    for i in range(len(array)):
-        max_array.append(max(array[i]))
-    
-    max_max = len(str(max(max_array)))
-
-    # prepare string for displaying the array
-    x = ""
-
-    for i in range(len(array)):
-        for j in range(len(array[i])):
-            x += str(arr[i][j]).rjust(max_max)
-            if j != len(array[i]) - 1:
-                x += " "
-            else:
-                x += "\n"
-    
-    return x
-
-import random
+import random 
 
 arr = []
-for i in range(4):
+for row in range(4):
     a = []
-    for j in range(2):
-        a.append(random.randint(0, 99))
+    for elem in range(2):
+        a.append(random.randint(0,99))
     arr.append(a)
 
+def my_arr(arr):
+
+    max_array = []
+    for row in range(len(arr)):
+        max_array.append(max(arr[row]))
+    max_max = len(str(max(max_array)))
+
+    result = ''
+    for row in range(len(arr)):
+        for elem in range(len(arr[row])):
+            result += str(arr[row][elem]).rjust(max_max)
+            if elem != len(arr[row])-1:
+                result += ' '
+            else:
+                result += '\n'
+    return result
+
 print(arr)
-print()
-print(display_arr(arr))
+print(my_arr(arr))
