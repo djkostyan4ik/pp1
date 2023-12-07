@@ -1,4 +1,4 @@
-class Music:
+class Music():
     def __init__(self, artist, track_title, album, year):
         self.artist = artist
         self.track_title = track_title
@@ -10,3 +10,5 @@ class Music:
     
 my_music = Music('Ed Sheeran',"Hearts Don't Break Around Here",'Divide', '2017')
 print(my_music)
+my_music2 = Music('Scorpions','Wind of Change','Crazy world', '1990')
+print(my_music2)
