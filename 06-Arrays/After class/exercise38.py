@@ -1,3 +1,4 @@
+value = int(input('Enter number: '))
 def my_function(value, array):
     count = 0
     for number in array:
@@ -6,4 +7,4 @@ def my_function(value, array):
     return count
 
 if __name__ == '__main__':
-    print(my_function(2, [3, 4, 1, 1, 5, 6]))
+    print(my_function(value, [3, 4, 1, 1, 5, 6]))

@@ -1,3 +1,5 @@
-1.& C:/Users/kosty/AppData/Local/Programs/Python/Python312/python.exe "c:/Users/kosty/pp1/07-FileHandling/In class/exrcise14.py"
-2.Milk
-3.Bread
+1.Milk
+2.Bread
+3.Fish
+4.Water
+5.Cheese

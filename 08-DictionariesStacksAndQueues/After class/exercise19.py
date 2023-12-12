@@ -1,7 +1,7 @@
 import json
 
 
-with open('students.json','r') as file:\
+with open('students.json','r') as file:
     info = json.load(file)
 
 keys1 = ['name', 'surname', 'student ID']

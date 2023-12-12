@@ -6,7 +6,7 @@ for element in arr:
         result += str(element)
     else:
         result += str(element) + " "
-print("Array", result)
+print("Array:", result)
 arr2 = arr.copy()
 for element in arr2:
     if element == arr2[-1]:
@@ -15,4 +15,4 @@ for element in arr2:
     else:
         element = element ** 2
         result2 += str(element) + " "
-print("Second power: ", result2)
+print("Second power:", result2)
