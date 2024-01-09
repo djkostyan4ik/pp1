@@ -12,7 +12,7 @@ class Statistics():
         if number != None:
             self.set.append(int(number))
         else:
-            self.set.appenf(int(input('Ad a number: ')))
+            self.set.append(int(input('Ad a number: ')))
 
     def max(self):
         return max(self.set)

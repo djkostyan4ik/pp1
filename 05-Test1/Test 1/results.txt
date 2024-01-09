@@ -1,0 +1,39 @@
+test_p1 (__main__.Test.test_p1) ... FAIL
+test_p2 (__main__.Test.test_p2) ... ERROR
+test_p3 (__main__.Test.test_p3) ... FAIL
+test_p4 (__main__.Test.test_p4) ... ok
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... ok
+
+======================================================================
+ERROR: test_p2 (__main__.Test.test_p2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\kosty\OneDrive\Рабочий стол\Mock exam\py.py", line 17, in test_p2
+    import p2
+ModuleNotFoundError: No module named 'p2'
+
+======================================================================
+FAIL: test_p1 (__main__.Test.test_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\kosty\OneDrive\Рабочий стол\Mock exam\py.py", line 13, in test_p1
+    self.assertEqual(p1.f(4,3),"4-3=1")
+AssertionError: '"4-3=1"' != '4-3=1'
+- "4-3=1"
+? -     -
++ 4-3=1
+
+
+======================================================================
+FAIL: test_p3 (__main__.Test.test_p3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\kosty\OneDrive\Рабочий стол\Mock exam\py.py", line 24, in test_p3
+    self.assertEqual(p3.f("123a1c"),False)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+FAILED (failures=2, errors=1)

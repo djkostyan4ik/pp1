@@ -1,0 +1,32 @@
+test_p1 (__main__.Test.test_p1) ... ok
+test_p2 (__main__.Test.test_p2) ... ok
+test_p3 (__main__.Test.test_p3) ... ok
+test_p4 (__main__.Test.test_p4) ... ok
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... ERROR
+test_p7 (__main__.Test.test_p7) ... ERROR
+
+======================================================================
+ERROR: test_p6 (__main__.Test.test_p6)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\kosty\OneDrive\Рабочий стол\test 2 pp1\test2-ZIISS1-1112.py", line 41, in test_p6
+    import p6
+ModuleNotFoundError: No module named 'p6'
+
+======================================================================
+ERROR: test_p7 (__main__.Test.test_p7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\kosty\OneDrive\Рабочий стол\test 2 pp1\test2-ZIISS1-1112.py", line 51, in test_p7
+    self.assertEqual(p7.f({"def":1,"de":1,"d:":1},"d"),3)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kosty\OneDrive\Рабочий стол\test 2 pp1\p7.py", line 5, in f
+    if word[0] == c[0] and word[1] == c[1]:
+                                      ~^^^
+IndexError: string index out of range
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.031s
+
+FAILED (errors=2)

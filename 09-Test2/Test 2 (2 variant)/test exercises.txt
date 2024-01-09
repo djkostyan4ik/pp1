@@ -1,0 +1,13 @@
+1.  u get number n and true if it's a number in Fibonacci sequence and false if it isn't
+
+2. Another one was u have an array of numbers like [7,7,7,7,4,4,4,5,5] and u have to return the one that appears a odd amount of times so in this case 4
+
+3. One was u have an a 2d array so[[3,0],[6,1]] the first number is how many people get on a bus and the second is how many get off and u have to return how many people are still on the bus so in this case 8
+
+4. U have a string of cards and have to return them in order so "T9JK3" -> "KJT93"
+
+5. One is a password has to be between 4-12 characters, lower case and have atleast 1 underscore
+
+6. One was u have to turn 24 hour time into 12 hour time so 23:05 -> 11:05pm
+
+7. Last one was, u have a dictionary of grades and a integer and the average of the grades has to be hire than the number
